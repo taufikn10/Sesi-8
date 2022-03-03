@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+/*---Navbar--- */
+
+header {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px 0px rgba(32, 32, 32, 0.2);
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+.navbar-nav li {
+  display: inline-block;
+}
+
+.navbar-nav li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navbar-nav li a:hover {
+  color: blue !important;
+}
+
+/* Profile */
+.profile img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-edit {
+  padding: 12px 40px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px 0 rgb(61, 49, 224);
+  cursor: pointer;
+}
+.btn-edit:hover {
+  padding: 12px 40px;
+  background-color: rgb(15, 15, 192);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px 0 rgb(61, 49, 224);
+  cursor: pointer;
+}
+
+.btn-resume {
+  padding: 12px 25px;
+  background-color: white;
+  color: green;
+  border-radius: 3px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.btn-resume:hover {
+  padding: 12px 25px;
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px 0 rgb(61, 49, 224);
+  cursor: pointer;
+}
+
+/* Form */
+.btn-submit {
+  height: 34px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  height: 34px;
+  width: 100%;
+  background-color: rgb(10, 99, 10);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .profile .border-start {
+    border: none !important;
+    margin-top: 20px;
+  }
+  .job {
+    text-align: center;
+  }
+}

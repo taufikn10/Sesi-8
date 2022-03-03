@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment 3 | Portofolio</title>
+    <!-- style -->
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="assets/libraries/bootstrap/css/bootstrap.min.css"
+    />
+    <script src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar x-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#myIventory">MY IVENTORY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- profile -->
+    <section class="profile py-3">
+      <div class="card container py-4 shadow-sm">
+        <div class="bg-white rounded-3">
+          <div class="d-flex align-items-center flex-lg-row flex-column">
+            <img
+              src="assets/image/profile.jpg"
+              alt="profile"
+              class="photo-image"
+            />
+            <div class="left-info px-5">
+              <h2 id="profile">Taufik Nurrahman</h2>
+              <p class="job" id="role">Frontend Developer</p>
+              <button id="edit" class="btn-edit" type="submit">Edit</button>
+              <button class="btn-resume" type="submit">Resume</button>
+            </div>
+            <div class="right-info d-flex px-5 border-start">
+              <div class="info fw-bold">
+                <p class="item-info">Availability</p>
+                <p class="item-info">Usia</p>
+                <p class="item-info">Lokasi</p>
+                <p class="item-info">Pengalaman</p>
+                <p class="item-info">Email</p>
+              </div>
+              //isi Profile
+              <div class="info-value px-3">
+                <p id="availability" class="item-info-value">Full-Time</p>
+                <p id="age" class="item-info-value">21</p>
+                <p id="location" class="item-info-value">Nganjuk, Jawa Timur</p>
+                <p id="yearsExperience" class="item-info-value">2</p>
+                <p id="email" class="item-info-value">
+                  offical.taufik980@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form -->
+    <section class="form mb-3 container card shadow-sm">
+      <form id="form" action="" class="mt-3">
+        <!-- Nama -->
+        <div class="mb-3">
+          <label for="name">Nama</label>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            id="inputName"
+            pattern="[a-zA-Z'-'\s]*"
+            required
+          />
+        </div>
+
+        <!-- Role -->
+        <div class="mb-3">
+          <label for="role">Role</label>
+          <input
+            type="text"
+            name="role"
+            class="form-control"
+            id="inputRole"
+            required
+          />
+        </div>
+
+        <!-- Availability  -->
+        <div class="mb-3">
+          <label for="availability">Availability</label>
+          <input
+            type="text"
+            name="availability"
+            class="form-control"
+            id="inputAvailability"
+            required
+          />
+        </div>
+
+        <!-- Age -->
+        <div class="mb-3">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            class="form-control"
+            id="inputAge"
+            required
+          />
+        </div>
+
+        <!-- Location -->
+        <div class="mb-3">
+          <label for="location">Location</label>
+          <input
+            type="text"
+            name="location"
+            class="form-control"
+            id="inputLocation"
+            required
+          />
+        </div>
+
+        <!-- Experience -->
+        <div class="mb-3">
+          <label for="yearsExperience">Years Experience</label>
+          <input
+            type="text"
+            name="yearsExperience"
+            class="form-control"
+            id="inputYearsExperience"
+            required
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="inputEmail"
+            required
+          />
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" id="btn-submit" class="btn-submit mb-3">
+          Submit
+        </button>
+      </form>
+    </section>
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
